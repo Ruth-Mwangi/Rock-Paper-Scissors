@@ -2,26 +2,32 @@ import java.util.Random;
 
 public class RockPaperScissors {
 
-    public String computerChooses() {
-        String[] choice={"rock","paper","scissors"};
-        Random myRandomGenerator=new Random();
+    public String computerChooses(String cChoice) {
 
-        int random=myRandomGenerator.nextInt(3);
-        return choice[random];
+
+        return cChoice;
     }
 
-    public String humanChooses(String hChoise) {
+    public String humanChooses(String hChoice) {
 
-        hChoise="rock";
-        return hChoise;
+        return hChoice;
     }
 
-    public String chooseWinner(String rock, String scissors) {
+    public String chooseWinner(String human, String computer) {
 
         String winner = null;
 
-        if(rock.equals("rock")&&scissors.equals("scissors")){
+        if((human.equals("rock")&&computer.equals("scissors"))||(human.equals("scissors")&&computer.equals("rock"))){
             winner="Rock";
+        }
+        else if((human.equals("rock")&&computer.equals("paper"))||(human.equals("paper")&&computer.equals("rock"))){
+            winner="Paper";
+        }
+        else if((human.equals("scissors")&&computer.equals("paper"))||(human.equals("paper")&&computer.equals("scissors"))){
+            winner="Scissors";
+        }
+        else {
+            winner="tie";
         }
         return winner;
     }

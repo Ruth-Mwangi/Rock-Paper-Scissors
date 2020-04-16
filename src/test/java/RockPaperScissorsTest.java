@@ -8,7 +8,7 @@ public class RockPaperScissorsTest {
     @Test
     public void computerChooses_shouldBeAString_true() throws Exception {
         RockPaperScissors testGame = new RockPaperScissors();
-        String computerChoice =  testGame.computerChooses();
+        String computerChoice =  testGame.computerChooses("rock");
         assertEquals(true, computerChoice instanceof String);
     }
 
