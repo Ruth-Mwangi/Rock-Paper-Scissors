@@ -12,7 +12,7 @@ public class RockPaperScissors {
 
     public String humanChooses(String hChoise) {
 
-        hChoise="bloop";
+        hChoise="rock";
         return hChoise;
     }
 
