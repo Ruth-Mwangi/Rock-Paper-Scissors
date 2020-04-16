@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RockPaperScissorsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-16T18:57:56" hostname="wangui-HP-EliteBook-840-G1" time="0.004">
+  <properties/>
+  <testcase name="humanChooses_shouldBeAString_true" classname="RockPaperScissorsTest" time="0.002"/>
+  <testcase name="computerChooses_shouldBeAString_true" classname="RockPaperScissorsTest" time="0.001"/>
+  <testcase name="chooseWinner_forRockAndScissors_Rock" classname="RockPaperScissorsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
